@@ -1,0 +1,10 @@
+
+out_to_console yes
+out_to_x no
+background no
+update_interval 1
+total_run_times 0
+use_spacer right
+
+TEXT
+$if_mpd_playing $mpd_track. $mpd_title ($mpd_elapsed/$mpd_length) ${mpd_bitrate} Kbps | ${endif} Root ${fs_used_perc /}% Music ${fs_used_perc /home/black_omega/music}% | CPU: ${cpu cpu0}% | MEM: $memperc% | HDD: $diskio | ETH0: ${downspeed eth0} | VOL:$if_mixer_mute OFF $else $mixer%$endif | ${time %D %r}
