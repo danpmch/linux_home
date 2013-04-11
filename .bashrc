@@ -10,4 +10,4 @@ PS1='[\u@\h \W]\$ '
 
 set -o vi
 
-alias cpp_comp='g++ *.{h,cpp} -o main'
+alias cpp_comp='g++ `find . -name "*.h" -o -name "*.cpp"` -o main'

@@ -23,6 +23,7 @@ set statusline=%F\ %m%r%=TYPE=%Y\ %-19(%l,%v\ %4p%%%)
 set laststatus=2
 
 " set a sweet style
+set t_Co=256
 colorscheme xoria256
 
 " Jump to last cursor position on opening file, unless it's invalid or in an
@@ -53,6 +54,8 @@ function! SwitchSourceHeader()
 endfunction
 nmap ,s :call SwitchSourceHeader()<CR>
 
+nmap ,e :e .<CR>
+
 " MULTIPURPOSE TAB KEY
 " Indent if we're at the beginning of a line. Else, do completion.
 
@@ -66,3 +69,4 @@ function! InsertTabWrapper()
 endfunction
 inoremap <tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <s-tab> <c-n>
+

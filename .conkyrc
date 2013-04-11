@@ -7,4 +7,4 @@ total_run_times 0
 use_spacer right
 
 TEXT
-$if_mpd_playing $mpd_track. $mpd_title ($mpd_elapsed/$mpd_length) ${mpd_bitrate} Kbps | ${endif} Root ${fs_used_perc /}% Music ${fs_used_perc /home/black_omega/music}% | CPU: ${cpu cpu0}% | MEM: $memperc% | HDD: $diskio | ETH0: ${downspeed eth0} | VOL:$if_mixer_mute OFF $else $mixer%$endif | ${time %D %r}
+$if_mpd_playing $mpd_track. $mpd_title ($mpd_elapsed/$mpd_length) ${mpd_bitrate} Kbps | ${endif} Root ${fs_used_perc /}% Home ${fs_used_perc /home/black_omega/ }% Music ${fs_used_perc /home/black_omega/music}% | CPU: ${cpu cpu0}% | MEM: $memperc% | HDD: $diskio | ETH0: ${downspeed eth0} | VOL:$if_mixer_mute OFF $else $mixer%$endif | ${time %D %r}

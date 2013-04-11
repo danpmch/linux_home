@@ -1,3 +1,5 @@
 [user]
 	email = dpm225@cornell.edu
 	name = Daniel McHenry
+[push]
+	default = simple

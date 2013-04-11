@@ -9,6 +9,6 @@ conky | while read -r; do
 done &
 
 tilda &
-feh --no-xinerama --bg-fill ~/pictures/black_cubes.jpg &
+feh --no-xinerama --bg-fill ~/pictures/viper.jpg &
 
 exec dwm
