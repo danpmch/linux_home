@@ -23,7 +23,8 @@ set statusline=%F\ %m%r%=TYPE=%Y\ %-19(%l,%v\ %4p%%%)
 set laststatus=2
 
 " set a sweet style
-colorscheme xoria256
+set t_Co=256
+colorscheme 256-grayvim
 
 " Jump to last cursor position on opening file, unless it's invalid or in an
 " event handler
